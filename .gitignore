@@ -1,0 +1,26 @@
+# ===== Keil 编译产物(不需要上传)=====
+Output/
+Listing/
+Objects/
+*.hex
+*.obj
+*.lst
+*.M51
+*.lnp
+*.map
+*.axf
+*.crf
+*.dep
+*.iex
+*.bak
+*.build_log.htm
+*.htm
+
+# ===== Keil 个人配置文件(含用户名,不需要上传)=====
+*.uvgui.*
+*.uvopt
+
+# ===== Windows 系统文件 =====
+Thumbs.db
+desktop.ini
+.DS_Store
