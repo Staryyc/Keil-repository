@@ -1,5 +1,6 @@
 /*************************************************************************
  * 文件名 : twinkle.c
+ * 作者   : Staryyc
  * 功能   : 51单片机驱动外部无源蜂鸣器循环播放《小星星》
  * 硬件   : AT89C52 + 12MHz 晶振,蜂鸣器经 8550 三极管接 P2.0
  * 编译   : Keil C51 (本工程已勾选 Output → Create HEX File)
@@ -91,7 +92,7 @@ void main(void)
     while (1)                        // 循环播放
     {
         for (i = 0; i < SONG_LEN; i++)
-            play_tone(freq[song[i]], beat[i] * 400);  // 一拍 = 400ms
+            play_tone(freq[song[i]], beat[i] * 350);  // 一拍 = 350ms(节奏稍快)
         delay_ms(800);               // 曲间停顿
     }
 }
